@@ -14,7 +14,11 @@ fi
 brew bundle
 
 # Install dotfiles 
-if [ ! -e ../dotfiles]; then
+if [ ! -e ../dotfiles ]; then
   gh repo clone makiton/dotfiles ../dotfiles
   $(cd ../dotfiles && ./install.sh)
 fi
+
+# Install dein.vim
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > /tmp/dein-installer.sh
+sh /tmp/dein-installer.sh ~/.cache/dein/
