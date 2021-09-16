@@ -10,6 +10,7 @@ brew "git"
 brew "terminal-notifier"
 brew "terraform"
 cask "google-chrome"
+cask "google-cloud-sdk", args: { require_sha: false }
 cask "google-japanese-ime"
 cask "slack"
 cask "visual-studio-code"
