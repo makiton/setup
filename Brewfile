@@ -1,6 +1,9 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+
+cask_args appdir: "~/Applications", require_sha: true
+
 brew "gh"
 brew "git"
 brew "terraform"
