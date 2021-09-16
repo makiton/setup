@@ -7,6 +7,7 @@ cask_args appdir: "~/Applications", require_sha: true
 
 brew "gh"
 brew "git"
+brew "nodenv"
 brew "terminal-notifier"
 brew "terraform"
 cask "google-chrome"
