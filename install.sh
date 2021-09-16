@@ -12,6 +12,7 @@ fi
 
 # install brews
 brew bundle
+brew autoupdate start --cleanup --enable-notification
 
 # Install dotfiles
 if [ ! -e ../dotfiles ]; then
