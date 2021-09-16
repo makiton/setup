@@ -12,6 +12,7 @@ brew "terraform"
 cask "google-chrome"
 cask "google-cloud-sdk", args: { require_sha: false }
 cask "google-japanese-ime"
+cask "macvim"
 cask "slack"
 cask "visual-studio-code"
 cask "zoom"
