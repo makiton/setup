@@ -10,6 +10,7 @@ brew "git"
 brew "nodenv"
 brew "terminal-notifier"
 brew "terraform"
+brew "tfenv"
 cask "google-chrome"
 cask "google-cloud-sdk", args: { require_sha: false }
 cask "docker"
