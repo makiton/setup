@@ -12,6 +12,7 @@ brew "terminal-notifier"
 brew "terraform"
 cask "google-chrome"
 cask "google-cloud-sdk", args: { require_sha: false }
+cask "docker"
 cask "google-japanese-ime"
 cask "macvim"
 cask "slack"
