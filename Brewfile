@@ -16,6 +16,7 @@ cask "google-chrome"
 cask "google-cloud-sdk", args: { require_sha: false }
 cask "docker"
 cask "google-japanese-ime"
+cask "kindle"
 cask "macvim"
 cask "slack"
 cask "visual-studio-code"
