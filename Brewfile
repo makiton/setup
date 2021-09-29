@@ -15,6 +15,7 @@ brew "terraformer"
 brew "tfenv"
 cask "google-chrome"
 cask "google-cloud-sdk", args: { require_sha: false }
+cask "discord"
 cask "docker"
 cask "google-japanese-ime"
 cask "kindle"
