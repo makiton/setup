@@ -13,6 +13,7 @@ brew "mysql-client"
 brew "terminal-notifier"
 brew "terraformer"
 brew "tfenv"
+brew "tfsec"
 cask "google-chrome"
 cask "google-cloud-sdk", args: { require_sha: false }
 cask "discord"
