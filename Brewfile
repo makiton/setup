@@ -14,11 +14,11 @@ brew "terminal-notifier"
 brew "terraformer"
 brew "tfenv"
 brew "tfsec"
-cask "google-chrome"
+cask "google-chrome", args: { require_sha: false }
 cask "google-cloud-sdk", args: { require_sha: false }
 cask "discord"
 cask "docker"
-cask "google-japanese-ime"
+cask "google-japanese-ime", args: { require_sha: false }
 cask "kindle"
 cask "macvim"
 cask "meetingbar"
