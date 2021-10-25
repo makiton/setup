@@ -19,6 +19,8 @@ cask "google-cloud-sdk", args: { require_sha: false }
 cask "discord"
 cask "docker"
 cask "google-japanese-ime", args: { require_sha: false }
+cask "karabiner-elements"
+cask "key-codes", args: { require_sha: false }
 cask "kindle"
 cask "macvim"
 cask "meetingbar"
