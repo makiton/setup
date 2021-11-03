@@ -5,6 +5,7 @@ tap "homebrew/core"
 
 cask_args appdir: "~/Applications", require_sha: true
 
+brew "act"
 brew "gh"
 brew "git"
 brew "go"
