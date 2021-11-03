@@ -2,6 +2,17 @@
 
 set -uex
 
+if [ "$(uname)" == 'Darwin' ]; then
+  OS='Mac'
+elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+  OS='Linux'
+elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then
+  OS='Cygwin'
+else
+  echo "Your platform ($(uname -a)) is not supported."
+  exit 1
+fi
+
 # Installing homebrew
 echo "Installing homebrew"
 if type brew >/dev/null; then
@@ -11,14 +22,16 @@ else
 fi
 
 # install brews
-brew bundle
-brew autoupdate start --cleanup --enable-notification
+brew bundle || true
+if [ OS = "Mac"]; then
+  brew autoupdate start --cleanup --enable-notification
+fi
 
 # Install dotfiles
 if [ ! -e ../dotfiles ]; then
   gh repo clone makiton/dotfiles ../dotfiles
-  $(cd ../dotfiles && ./install.sh)
 fi
+$(cd ../dotfiles && ./install.sh)
 
 # Install dein.vim
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >/tmp/dein-installer.sh
