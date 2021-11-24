@@ -17,6 +17,7 @@ brew "terminal-notifier"
 brew "terraformer"
 brew "tfenv"
 brew "tfsec"
+brew "tmux"
 cask "google-chrome", args: { require_sha: false }
 cask "google-cloud-sdk", args: { require_sha: false }
 cask "discord"
