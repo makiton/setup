@@ -30,6 +30,3 @@ fi
 # Install dotfiles
 chezmoi init makiton && chezmoi apply -v
 
-# Install dein.vim
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >/tmp/dein-installer.sh
-sh /tmp/dein-installer.sh ~/.cache/dein/
