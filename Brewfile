@@ -5,7 +5,6 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "minamijoyo/tfupdate"
 tap "remotemobprogramming/brew"
-brew "act"
 brew "anyenv"
 brew "python@3.9"
 brew "chezmoi"
@@ -21,7 +20,6 @@ brew "node-build"
 brew "nodenv"
 brew "skaffold"
 brew "terminal-notifier"
-brew "terraformer"
 brew "tfenv"
 brew "tfsec"
 brew "tmux"
@@ -35,7 +33,6 @@ cask "google-chrome", args: { appdir: "~/Applications" }
 cask "google-cloud-sdk", args: { appdir: "~/Applications" }
 cask "google-japanese-ime", args: { appdir: "~/Applications" }
 cask "karabiner-elements", args: { appdir: "~/Applications" }
-cask "key-codes", args: { appdir: "~/Applications" }
 cask "kindle", args: { appdir: "~/Applications" }
 cask "macvim", args: { appdir: "~/Applications" }
 cask "meetingbar", args: { appdir: "~/Applications" }
