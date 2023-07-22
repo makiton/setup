@@ -24,7 +24,7 @@ fi
 # install brews
 brew bundle || true
 if [ OS = "Mac"]; then
-  brew autoupdate start --cleanup --enable-notification
+  brew autoupdate start --upgrade --cleanup --enable-notification
 fi
 
 # Install dotfiles
