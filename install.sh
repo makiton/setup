@@ -28,10 +28,7 @@ if [ OS = "Mac"]; then
 fi
 
 # Install dotfiles
-if [ ! -e ../dotfiles ]; then
-  gh repo clone makiton/dotfiles ../dotfiles
-fi
-$(cd ../dotfiles && ./install.sh)
+chezmoi init makiton && chezmoi apply -v
 
 # Install dein.vim
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >/tmp/dein-installer.sh
