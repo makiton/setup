@@ -1,33 +1,85 @@
+tap "getsentry/tools"
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-
-cask_args appdir: "~/Applications", require_sha: true
-
+tap "minamijoyo/tfupdate"
+tap "remotemobprogramming/brew"
 brew "act"
 brew "anyenv"
+brew "python@3.9"
+brew "chezmoi"
 brew "gh"
 brew "git"
 brew "go"
-brew "minamijoyo/tfupdate/tfupdate"
+brew "graphviz"
+brew "grep"
+brew "jq"
 brew "mysql-client"
+brew "neovim"
+brew "node-build"
 brew "nodenv"
+brew "skaffold"
 brew "terminal-notifier"
 brew "terraformer"
 brew "tfenv"
 brew "tfsec"
 brew "tmux"
-cask "google-chrome", args: { require_sha: false }
-cask "google-cloud-sdk", args: { require_sha: false }
-cask "discord"
-cask "docker"
-cask "google-japanese-ime", args: { require_sha: false }
-cask "karabiner-elements"
-cask "key-codes", args: { require_sha: false }
-cask "kindle"
-cask "macvim"
-cask "meetingbar"
-cask "slack"
-cask "visual-studio-code"
-# cask "zoom"
+brew "wireshark"
+brew "getsentry/tools/sentry-cli"
+brew "minamijoyo/tfupdate/tfupdate"
+brew "remotemobprogramming/brew/mob"
+cask "discord", args: { appdir: "~/Applications" }
+cask "docker", args: { appdir: "~/Applications" }
+cask "google-chrome", args: { appdir: "~/Applications" }
+cask "google-cloud-sdk", args: { appdir: "~/Applications" }
+cask "google-japanese-ime", args: { appdir: "~/Applications" }
+cask "karabiner-elements", args: { appdir: "~/Applications" }
+cask "key-codes", args: { appdir: "~/Applications" }
+cask "kindle", args: { appdir: "~/Applications" }
+cask "macvim", args: { appdir: "~/Applications" }
+cask "meetingbar", args: { appdir: "~/Applications" }
+cask "slack", args: { appdir: "~/Applications" }
+cask "visual-studio-code", args: { appdir: "~/Applications" }
+vscode "aaron-bond.better-comments"
+vscode "cweijan.vscode-mysql-client2"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "firsttris.vscode-jest-runner"
+vscode "foxundermoon.next-js"
+vscode "foxundermoon.shell-format"
+vscode "golang.go"
+vscode "GraphQL.vscode-graphql"
+vscode "GraphQL.vscode-graphql-syntax"
+vscode "hashicorp.terraform"
+vscode "kakumei.ts-debug"
+vscode "mathiasfrohlich.Kotlin"
+vscode "mike-co.import-sorter"
+vscode "mrmlnc.vscode-json5"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-wsl"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "Orta.vscode-jest"
+vscode "pmneo.tsimporter"
+vscode "redhat.vscode-yaml"
+vscode "rust-lang.rust-analyzer"
+vscode "steoates.autoimport"
+vscode "TabNine.tabnine-vscode"
+vscode "tfsec.tfsec"
+vscode "usernamehw.errorlens"
+vscode "vscode-icons-team.vscode-icons"
+vscode "vscodevim.vim"
+vscode "vsls-contrib.codetour"
+vscode "WakaTime.vscode-wakatime"
+vscode "wix.vscode-import-cost"
+vscode "yzhang.markdown-all-in-one"
