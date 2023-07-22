@@ -19,6 +19,7 @@ if type brew >/dev/null; then
   echo "homebrew is already installed"
 else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # install brews

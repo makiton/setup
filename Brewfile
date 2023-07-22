@@ -32,7 +32,6 @@ cask "docker", args: { appdir: "~/Applications" }
 cask "google-chrome", args: { appdir: "~/Applications" }
 cask "google-cloud-sdk", args: { appdir: "~/Applications" }
 cask "google-japanese-ime", args: { appdir: "~/Applications" }
-cask "karabiner-elements", args: { appdir: "~/Applications" }
 cask "kindle", args: { appdir: "~/Applications" }
 cask "macvim", args: { appdir: "~/Applications" }
 cask "meetingbar", args: { appdir: "~/Applications" }
